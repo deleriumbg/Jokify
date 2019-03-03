@@ -1,0 +1,185 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+.main {
+    margin-bottom: 51px;
+    background: #fff;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Form Password */
+.form-password {
+    position: relative
+}
+
+.form-password input {
+    padding-right: 50px;
+}
+
+.form-password .field {
+    position: relative;
+}
+
+.form-password svg {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    transition: fill .4s;
+    cursor: pointer;
+}
+
+.form-password.active svg {
+    fill: green;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+
+.nav a:after {
+    content: '';
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    bottom: 15px;
+    z-index: 5;
+    height: 1px;
+    background: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility .4s, opacity .4s, right .4s, left .4s;
+}
+
+.nav a:hover:after {
+    right: 15px;
+    left: 15px;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Footer */
+.footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -50;
+    padding: 15px 0;
+    border-top: 1px solid #ccc;
+    background: #101010;
+    color: #fff;
+}
+
+.footer p:last-child {
+    margin-bottom: 0;
+}
+
+/* Row Categories */
+.row-categories .btn-primary {
+    margin-bottom: 5px;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    opacity: .8;
+    transition: transform .4s, box-shadow .4s; 
+}
+
+.row-categories .btn-primary:hover {
+    opacity: 1;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+}
+
+/* Panel */
+.panel {
+    box-shadow: -5px 10px 15px rgba(0, 0, 0, .10);
+}
+
+/* Panel Body*/
+.panel-body {
+    display: -webkit-box;
+    max-width: 398px;
+    height: 211px;
+    margin: 0 auto;
+    line-height: 1.4;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.panel-footer:after {
+    content: '';
+    clear: both;
+    display: table;
+    line-height: 0;
+}
+
+.panel-footer .btn {
+    position: relative;
+    float: right;
+    min-width: 120px;
+    background: #b4d75b;
+    border-color: #b4d75b;
+    border-radius: 25px;
+    -moz-appearance: none;
+}
+
+.panel-footer .btn:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 5;
+    width: 0;
+    border-radius: 25px;
+    background: yellowgreen;
+    opacity: 0;
+    transition: width .4s, opacity .4s;
+}
+
+.panel-footer .btn span {
+    position: relative;
+    z-index: 10;
+}
+
+.panel-footer .btn:hover:after {
+    width: 100%;
+    opacity: 1;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}

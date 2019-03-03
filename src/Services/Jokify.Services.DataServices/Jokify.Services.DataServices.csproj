@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Data\Jokify.Data.Common\Jokify.Data.Common.csproj" />
+    <ProjectReference Include="..\..\Data\Jokify.Data.Models\Jokify.Data.Models.csproj" />
+    <ProjectReference Include="..\Jokify.Services.Mapping\Jokify.Services.Mapping.csproj" />
+    <ProjectReference Include="..\Jokify.Services.Models\Jokify.Services.Models.csproj" />
+  </ItemGroup>
+
+</Project>

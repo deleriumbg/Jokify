@@ -1,0 +1,18 @@
+﻿@model Jokify.Services.Models.Jokes.JokeDetailsViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div>
+    <hr />
+    <div class="text-success">@Html.DisplayFor(model => model.Content)</div>
+    <br />
+    <div>Категория: @Html.DisplayFor(model => model.CategoryName)</div>
+</div>
+<br/>
+<div>
+    <a asp-action="Index" asp-controller="Home">Back to Index</a>
+</div>
+
+
